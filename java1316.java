@@ -9,16 +9,17 @@ public class java1316 {
 
         for (int i = 0; i < num1; i++) {
             String str = k.next();
-            boolean test[]= new boolean[26];//기본값은 True
+            boolean test[]= new boolean[26];//기본값은 False
 
             for (int j = 0; j < str.length()-1; j++) {
-                if(str.charAt(i)!=str.charAt(i+1)){
+                if(str.charAt(i)!=str.charAt(j+1)){
                     if(test[str.charAt(i+1)-97]==true){
                         cnt--;
-                        break;
+
+
                     }
                 }
-                test[str.charAt(i)-97]=true;
+                test[str.charAt(i)-97]=true;//
             }
         }
         System.out.println(cnt);
