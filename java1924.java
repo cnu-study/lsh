@@ -6,7 +6,7 @@ public class java1924 {
         int month = k.nextInt();
         int day = k.nextInt();
         String[] arr = {"MON","TUE","WED","THU","FRI","SAT","SUN"} ;
-        int[] m = {1,31,28,30,31,30,31,31,30,31,30,31};
+        int[] m = {0,31,28,31,30,31,30,31,31,30,31,30,31};
         int n=0;
         for (int i = 0; i < month; i++) {
             n+=m[i];
